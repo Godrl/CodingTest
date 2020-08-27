@@ -1,5 +1,6 @@
 package TNG_Hash;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,5 @@ public class Test {
 		System.out.println(hash);
 		System.out.println(hash.keySet());
 		
-
 	}
-
 }
