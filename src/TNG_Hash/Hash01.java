@@ -15,10 +15,10 @@ public class Hash01 {
 		String[] participant = {"leo", "kiki", "eden"};
 		String[] completion = {"kiki", "eden"};
 		
-		Solution01 sol01 = new Solution01();
+		Hash01_sol01 sol01 = new Hash01_sol01();
 		System.out.println(sol01.solution(participant, completion));
 		
-		Solution02 sol02 = new Solution02();
+		Hash01_sol02 sol02 = new Hash01_sol02();
 		System.out.println(sol02.solution(participant, completion));
 	}
 
@@ -31,7 +31,7 @@ public class Hash01 {
  * 	완주자와 참여자의 길이가 1차이나므로 마지막 사람은 무조건 완주하지 못한 사람이다.
  *	고로 i를 for문 밖에 선언하여 마지막 참여자도 추가해줘야 한다.
 */
-class Solution01 {
+class Hash01_sol01 {
     public String solution(String[] participant, String[] completion) {
 		String answer = "";
 		
@@ -51,13 +51,13 @@ class Solution01 {
 
 /*
  * 풀이2
- * 	HashMap.getOrDefault(key,defaulValue) - map에 key값이 있다면 key값을 없다면 defaulValue를 반환 
- * 	HashMap.keySet() - map에 포함된 모든 key를 하나의 집합(Set)으로 반환
+ * 	Map.getOrDefault(key,defaulValue) - map에 key값이 있다면 key를 없다면 defaulValue를 반환 
+ * 	Map.keySet() - map에 포함된 모든 key를 하나의 집합(Set)으로 반환
  * 	맵에 참여자들 모두 담고 값을 1로 만들고 같은 이름을 가진 완주자들의 값을 -1 해준다.
  * 	값이 0이 아닌 참여자들을 반환한다. 
  * 	조건에서 참여자와 완주자의 차이가 1이라고 했으므로 한명이 나오면 바로 함수를 빠져나가도 된다.  
 */
-class Solution02 {
+class Hash01_sol02 {
     public String solution(String[] participant, String[] completion) {
 		String answer = "";
 				

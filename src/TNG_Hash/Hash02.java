@@ -21,18 +21,18 @@ phone_book의 길이는 1 이상 1,000,000 이하입니다.
 public class Hash02 {
 	public static void main(String[] args) {
 		String[] str = {"123","456","789"};
-		Solution sol = new Solution();
+		Hash02_sol sol = new Hash02_sol();
 		System.out.println(sol.solution(str));
 
 	}
 }
 
 /*
- * HashMap.containsKey(key) --> key값을 가지고 있으면 true 없으면 false 반환
+ * Map.containsKey(key) --> key값을 가지고 있으면 true 없으면 false 반환
  * 
  * 전화번호를 키값으로 맵에 넣어둔 뒤 각각의 키중에 해당 번호가 있는지 검사하여 결과를 반환한다.
 */
-class Solution {
+class Hash02_sol {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
         Map<String,String> map = new HashMap<String,String>();
