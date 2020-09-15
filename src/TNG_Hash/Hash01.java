@@ -51,11 +51,13 @@ class Hash01_sol01 {
 
 /*
  * 풀이2
- * 	Map.getOrDefault(key,defaulValue) - map에 key값이 있다면 key를 없다면 defaulValue를 반환 
- * 	Map.keySet() - map에 포함된 모든 key를 하나의 집합(Set)으로 반환
- * 	맵에 참여자들 모두 담고 값을 1로 만들고 같은 이름을 가진 완주자들의 값을 -1 해준다.
+ * 	 
+ * 	맵에 참여자들을 모두 담고 값을 1로 만들고 같은 이름을 가진 완주자들의 값을 -1 해준다.
  * 	값이 0이 아닌 참여자들을 반환한다. 
- * 	조건에서 참여자와 완주자의 차이가 1이라고 했으므로 한명이 나오면 바로 함수를 빠져나가도 된다.  
+ * 	조건에서 참여자와 완주자의 차이가 1이라고 했으므로 한명이 나오면 바로 함수를 빠져나가도 된다.
+ * 
+ *   Map.getOrDefault(key,defaulValue) - map에 key값이 있다면 key를 없다면 defaulValue를 반환
+ *   Map.keySet() - map에 포함된 모든 key를 하나의 집합(Set)으로 반환
 */
 class Hash01_sol02 {
     public String solution(String[] participant, String[] completion) {
@@ -65,6 +67,8 @@ class Hash01_sol02 {
 		
 		for(String part : participant) {
 			hash.put(part, hash.getOrDefault(part, 0)+1);
+			System.out.println(hash.keySet());
+			System.out.println(hash.values());
 		}
 		for(String compl : completion) {
 			hash.put(compl, hash.get(compl)-1);
