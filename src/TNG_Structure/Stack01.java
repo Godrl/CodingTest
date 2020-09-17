@@ -13,9 +13,9 @@ prices의 길이는 2 이상 100,000 이하입니다.
 prices			return
 [1, 2, 3, 2, 3]	[4, 3, 1, 1, 0]
 */
-public class Structure01 {
+public class Stack01 {
 	public static void main(String[] args) {
-		Structure01_Solution sol = new Structure01_Solution();
+		Stack01_Solution sol = new Stack01_Solution();
 		int[] prices = {1,3,2,4};
 		sol.solution(prices);
 	}
@@ -32,7 +32,7 @@ public class Structure01 {
  * Stack.peek()[0]; --> 맨위의 배열의 첫번째 값 = 5
  * 
 */
-class Structure01_Solution {
+class Stack01_Solution {
     public int[] solution(int[] prices) {
         int[] answer = new int[prices.length];
         Stack<int[]> stack = new Stack<>();
