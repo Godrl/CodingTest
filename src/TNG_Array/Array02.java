@@ -29,7 +29,7 @@ public class Array02 {
 		int[] numbers = {3, 30, 34, 5, 9};
 		
 		System.out.println(sol.solution(numbers));
-	}
+	}  
 }
 
 /*
