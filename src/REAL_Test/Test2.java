@@ -35,7 +35,7 @@ public class Test2 {
 class Test2_Solution {
     public int solution(int n, int m) {
         int answer = 0;
-
+       
         
         return answer;
     }
